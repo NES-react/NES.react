@@ -1,0 +1,35 @@
+{
+  "name": "nes.react",
+  "version": "0.0.1",
+  "description": "A REACT Library built on top of the NES.css Framework",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev:init": "npm install && cd ./example && npm install",
+    "start": "concurrently 'webpack --mode=development --watch' ' webpack --mode=development && cd ./example && npm start'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NES-react/nes.react.git"
+  },
+  "author": "Kaylum Lally <kaylum@hikaylum.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NES-react/nes.react/issues"
+  },
+  "homepage": "https://github.com/NES-react/nes.react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.0",
+    "react": "^16.10.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "peerDependencies": {
+    "react": "^16.10.2"
+  }
+}
